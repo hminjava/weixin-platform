@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/wxmenu")
+@RequestMapping("/service/wxmenu")
 public class WxMenuController extends BaseController {
 	
 	@RequestMapping("/index")
