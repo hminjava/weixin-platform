@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="${staticServer}/manage/template/css/styles.css" />
 <link rel="stylesheet" href="${staticServer}/manage/template/css/toastr.css" />
 <link rel="stylesheet" href="${staticServer}/manage/template/css/fullcalendar.css" />
+<link rel="stylesheet" href="${staticServer}/manage/style/common.css" />
 <script src="${staticServer}/manage/template/js/jquery.min.js"></script>
 <script src="${staticServer}/manage/template/js/bootstrap.js"></script>
 <%--<script src="${staticServer}/manage/template/js/jquery.knob.js"></script>--%>
@@ -20,6 +21,8 @@
 <script src="${staticServer}/manage/template/js/jquery.validate.js"></script>
 <script src="${staticServer}/manage/template/js/jquery.validate.extend.js"></script>
 <script src="${staticServer}/manage/template/js/jquery.form.js"></script>
+<script src="${staticServer}/manage/js/common/jquery.validate.js"></script>
+<script src="${staticServer}/manage/js/common/jquery.validate.extend.js"></script>
 <%--<script src="${staticServer}/manage/template/js/fullcalendar.min.js"></script>--%>
 <%--<script src="${staticServer}/manage/template/js/gcal.js"></script>--%>
 <%--<script src="${staticServer}/manage/template/js/setup.js"></script>--%>

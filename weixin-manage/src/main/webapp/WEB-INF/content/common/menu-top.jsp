@@ -10,7 +10,7 @@
 						<br>仪表盘</a>
 					</li>
 					<li>
-						<a class="active" href="/service/index"><i
+						<a class="active" href="${ctx}/service/wxmenu/index"><i
 							class="batch stream"></i>
 						<br>微服务</a>
 					</li>

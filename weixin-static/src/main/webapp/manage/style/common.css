@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+.left-menu {width: 228px;margin: 30px 0 0;padding: 0;background-color: #fff;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);-moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);box-shadow: 0 1px 4px rgba(0,0,0,.065);}
+.left-menu > li > a {display: block;width: 190px \9;margin: 0 0 -1px;padding: 8px 14px;border: 1px solid #e5e5e5;}
+.left-menu > li:first-child > a {-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;}
+.left-menu > li:last-child > a {-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
+.left-menu > .active > a {position: relative;z-index: 2;padding: 9px 15px;border: 0;text-shadow: 0 1px 0 rgba(0,0,0,.15);-webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);-moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);}
+/* Chevrons */
+.left-menu .icon-chevron-right {float: right;margin-top: 2px;margin-right: -6px;opacity: .25;}
+.left-menu > li > a:hover {background-color: #f5f5f5;}
+.left-menu a:hover .icon-chevron-right {opacity: .5;}
+.left-menu .active .icon-chevron-right,
+.left-menu .active a:hover .icon-chevron-right {background-image: url(../template/img/glyphicons-halflings-white.png);opacity: 1;}
+.left-menu.affix {top: 40px;}
+.left-menu.affix-bottom {position: absolute;top: auto;bottom: 270px;}
+
+.nopadding{padding:0px !important;}
+.form-condensed .control-group .control-label{width:90px;}
+.form-condensed .control-group .controls{margin-left:110px;}
+
+/* list-tree */
+.list-tree-node{border-bottom: 1px solid #ddd;position: relative;}
+.list-tree-node:hover{background:#c5deab;}
+.list-tree-node a{display:block;padding: 8px 12px;line-height: 20px;vertical-align: middle;}
+.list-tree-node.active a{color:#fff;}
+.list-tree-node .btns{display: none;position: absolute;top: 0px;right: 10px;height: 37px;line-height: 37px;vertical-align: middle;}
+.list-tree-node .btns a{display: inline-block;padding: 8px 5px !important;}
+.list-tree-node .move{display: none;position: absolute;top: 0px;right: 10px;}
+.list-tree-node:hover .btns{display:block;}
+.list-tree.sortable .list-tree-node:hover .btns{display:none;}
+.list-tree.sortable  a.move{display:block;}
+.list-tree-placeholder{display:inline-block;width:20px;}

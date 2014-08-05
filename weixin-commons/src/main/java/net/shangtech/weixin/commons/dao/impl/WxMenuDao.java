@@ -6,6 +6,9 @@ import net.shangtech.framework.spring.annotation.hibernate3.impl.BaseDao;
 import net.shangtech.weixin.commons.dao.IWxMenuDao;
 import net.shangtech.weixin.commons.entity.WxMenu;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class WxMenuDao extends BaseDao<WxMenu> implements IWxMenuDao {
 
 	public List<WxMenu> findBySysUser(int sysUserId) {
