@@ -1,4 +1,7 @@
-1.myeclipse激活maven插件
-2.fork并导入项目https://github.com/tsingheng/shangtech-framework
-3.导入本项目所有工程
-4.可以开发了
+<h2>导入myeclipse步骤</h2>
+<ol class="task-list">
+  <li>myeclipse激活maven插件</li>
+  <li>fork并导入项目<a href="https://github.com/tsingheng/shangtech-framework">https://github.com/tsingheng/shangtech-framework</a></li>
+  <li>导入本项目所有工程</li>
+  <li>可以开发了</li>
+</ol>
