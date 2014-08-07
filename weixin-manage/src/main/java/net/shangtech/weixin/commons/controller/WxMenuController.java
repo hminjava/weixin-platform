@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/" + WxMenuController.PATH)
 public class WxMenuController extends BaseController {
 	
-	private static final String PATH = "service/wxmenu";
+	public static final String PATH = "service/wxmenu";
 	
 	@Autowired private IWxMenuService service;
 	
