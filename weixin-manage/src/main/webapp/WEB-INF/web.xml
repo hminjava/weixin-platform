@@ -14,10 +14,6 @@
 	<listener>
 		<listener-class>net.shangtech.weixin.commons.listener.ApplicationStartupListener</listener-class>
 	</listener>
-	<context-param>
-		<param-name>staticServer</param-name>
-		<param-value>http://static.weixin.shangtech.net:8080/weixin-static</param-value>
-	</context-param>
 
 	<!--  
 	<filter>
