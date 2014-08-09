@@ -43,6 +43,18 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>4.0.0.M1</version>
+		</dependency>
+		<dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>4.0.2.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -58,6 +70,11 @@
 			<groupId>net.sourceforge.jtds</groupId>
 			<artifactId>jtds</artifactId>
 			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.18</version>
 		</dependency>
 
 		<dependency>
@@ -149,4 +166,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>spring-milestone</id>
+		    <name>Spring Snapshot Repository</name>
+		    <url>http://repo.springsource.org/milestone</url>
+		</repository>
+	</repositories>
 </project>
