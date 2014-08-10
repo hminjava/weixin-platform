@@ -14,7 +14,7 @@ public class ApplicationStartupListener implements ServletContextListener {
 	public void contextInitialized(ServletContextEvent sce) {
 		Properties props = new Properties();
 		try {
-			props.load(ApplicationStartupListener.class.getResourceAsStream("servers.properties"));
+			props.load(ApplicationStartupListener.class.getClassLoader().getResourceAsStream("servers.properties"));
 			sce.getServletContext().setAttribute("staticServer", props.getProperty("static.server"));
 		} catch (IOException e) {
 			e.printStackTrace();
