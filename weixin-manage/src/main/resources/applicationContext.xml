@@ -12,18 +12,20 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	<bean id="propertyConfigure" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="/WEB-INF/classes/jdbc-mssqlserver.properties"></property>
+		<property name="location" value="/WEB-INF/classes/jdbc-oracle10g.properties"></property>
 	</bean>
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="${jdbc.driver}"></property>
 		<property name="initialSize" value="10"></property>
 		<property name="maxActive" value="100"></property>
 		<property name="maxWait" value="600000"></property>
+		<!--  
 		<property name="validationQuery" value="SELECT 1"></property>
 		<property name="testOnBorrow" value="true"></property>
 		<property name="timeBetweenEvictionRunsMillis" value="300000"></property>
 		<property name="numTestsPerEvictionRun" value="3"></property>
 		<property name="minEvictableIdleTimeMillis" value="300000"></property>
+		-->
 		<property name="url" value="${jdbc.url}"></property>
 		<property name="username" value="${jdbc.username}"></property>
 		<property name="password" value="${jdbc.password}"></property>
@@ -33,7 +35,7 @@
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="hibernateProperties">
 			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
 				<prop key="hibernate.show_sql">false</prop>
 				<prop key="hibernate.format_sql">false</prop>
 				<prop key="hibernate.cache.use_second_level_cache">true</prop>
